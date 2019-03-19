@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
-import { Carousel, Box, Button, Heading, Grommet, Image, Grid, Text, Accordion, AccordionPanel, Markdown } from 'grommet';
-import { LinkedinOption, Github, MailOption, DocumentText } from 'grommet-icons';
+import { Carousel, Box, Button, Heading, Grommet, Image, Text, Accordion, AccordionPanel, Menu } from 'grommet';
+import { LinkedinOption, Github, DocumentText } from 'grommet-icons';
 
 const theme = {
   global: {
@@ -140,109 +140,198 @@ const Work = (props) => (
   </Box>
 )
 
-const Awards = (props) => (
-  <Box width="large">
-    <Box margin={{bottom: "medium"}}>
-      <Text weight="bold">best use of particle iot @ makeuoft</Text>
-      <Text>feb 2019</Text>
-    </Box>
-    <Box margin={{bottom: "medium"}}>
-      <Text weight="bold">best use of algolia @ mhacks 11</Text>
-      <Text>oct 2018</Text>
-    </Box>
-    <Box margin={{bottom: "medium"}}>
-      <Text weight="bold">cibc client experience hack @ ruhacks</Text>
-      <Text>may 2018</Text>
-    </Box>
-    <Box margin={{bottom: "medium"}}>
-      <Text weight="bold">best green hack @ echacks</Text>
-      <Text>nov 2017</Text>
-    </Box>
-    <Box margin={{bottom: "medium"}}>
-      <Text weight="bold">2nd place @ echacks</Text>
-      <Text>nov 2017</Text>
-    </Box>
-    <Box margin={{bottom: "medium"}}>
-      <Text weight="bold">finalist @ hack the north</Text>
-      <Text>sept 2017</Text>
-    </Box>
-    <Box margin={{bottom: "medium"}}>
-      <Text weight="bold">dean's honor list @ western university</Text>
-      <Text>apr 2017</Text>
-    </Box>
-    <Box margin={{bottom: "medium"}}>
-      <Text weight="bold">2nd place @ qhacks</Text>
-      <Text>feb 2017</Text>
-    </Box>
-    <Box margin={{bottom: "medium"}}>
-      <Text weight="bold">best use of indico api @ qhacks</Text>
-      <Text>feb 2017</Text>
-    </Box>
-    <Box margin={{bottom: "medium"}}>
-      <Text weight="bold">1st place @ hackwestern</Text>
-      <Text>oct 2016</Text>
-    </Box>
-    <Box margin={{bottom: "medium"}}>
-      <Text weight="bold">3rd place @ wearhackskw</Text>
-      <Text>mar 2016</Text>
-    </Box>
-    <Box margin={{bottom: "medium"}}>
-      <Text weight="bold">best hardware hack @ hackwestern</Text>
-      <Text>nov 2015</Text>
-    </Box>
-  </Box>
-)
+class Awards extends React.Component {
 
-const Projects = (props) => (
-  <Box width="large">
-    <Box margin={{bottom: "medium"}}>
-      <Text weight="bold">medication dedication</Text>
-      <Text weight="bold">feb 2019</Text>
-      <Text>iot pill monitoring solution</Text>
-      <Text>front-end built with flutter</Text>
-      <Text>back-end built with nodejs & azure sql database</Text>
-      <Text>hardware built with arduino & particle photon</Text>
-      <Box direction="row">
-        <a href="https://devpost.com/software/medication-dedication">
-          <Text margin={{right: "small"}}>devpost</Text>
-        </a>
-        <a href="https://github.com/iYung/med-ded-client-app">
-          <Text>github</Text>
-        </a>
+  constructor(props){
+    super(props);
+    this.state = { year: "2019" };
+  }
+
+  render(){
+    return (
+      <Box width="large">
+        <Menu
+          label={this.state.year}
+          items={[
+            { label: '2019', onClick: () => { this.setState({ year: "2019" })} },
+            { label: '2018', onClick: () => { this.setState({ year: "2018" })} },
+            { label: '2017', onClick: () => { this.setState({ year: "2017" })} },
+            { label: '2016', onClick: () => { this.setState({ year: "2016" })} },
+            { label: '2015', onClick: () => { this.setState({ year: "2015" })} },
+          ]}
+          margin={{bottom: "medium"}}
+        />
+        {
+          this.state.year === "2019" &&
+          <Box margin={{bottom: "medium"}}>
+            <Text weight="bold">best use of particle iot @ makeuoft</Text>
+            <Text>feb 2019</Text>
+          </Box>
+        }
+        {
+          this.state.year === "2018" &&
+          <Box>
+            <Box margin={{bottom: "medium"}}>
+              <Text weight="bold">best use of algolia @ mhacks 11</Text>
+              <Text>oct 2018</Text>
+            </Box>
+            <Box margin={{bottom: "medium"}}>
+              <Text weight="bold">cibc client experience hack @ ruhacks</Text>
+              <Text>may 2018</Text>
+            </Box>
+          </Box>
+        }
+        {
+          this.state.year === "2017" &&
+          <Box>
+            <Box margin={{bottom: "medium"}}>
+              <Text weight="bold">best green hack @ echacks</Text>
+              <Text>nov 2017</Text>
+            </Box>
+            <Box margin={{bottom: "medium"}}>
+              <Text weight="bold">2nd place @ echacks</Text>
+              <Text>nov 2017</Text>
+            </Box>
+            <Box margin={{bottom: "medium"}}>
+              <Text weight="bold">finalist @ hack the north</Text>
+              <Text>sept 2017</Text>
+            </Box>
+            <Box margin={{bottom: "medium"}}>
+              <Text weight="bold">dean's honor list @ western university</Text>
+              <Text>apr 2017</Text>
+            </Box>
+            <Box margin={{bottom: "medium"}}>
+              <Text weight="bold">2nd place @ qhacks</Text>
+              <Text>feb 2017</Text>
+            </Box>
+            <Box margin={{bottom: "medium"}}>
+              <Text weight="bold">best use of indico api @ qhacks</Text>
+              <Text>feb 2017</Text>
+            </Box>
+          </Box>
+        }
+        {
+          this.state.year === "2016" &&
+          <Box>
+            <Box margin={{bottom: "medium"}}>
+              <Text weight="bold">1st place @ hackwestern</Text>
+              <Text>oct 2016</Text>
+            </Box>
+            <Box margin={{bottom: "medium"}}>
+              <Text weight="bold">3rd place @ wearhackskw</Text>
+              <Text>mar 2016</Text>
+            </Box>
+          </Box>
+        }
+        {
+          this.state.year === "2015" &&
+          <Box>
+            <Box margin={{bottom: "medium"}}>
+              <Text weight="bold">best hardware hack @ hackwestern</Text>
+              <Text>nov 2015</Text>
+            </Box>
+          </Box>
+        }
       </Box>
-    </Box>
-    <Box margin={{bottom: "medium"}}>
-      <Text weight="bold">depository repository</Text>
-      <Text weight="bold">nov 2018</Text>
-      <Text>airbnb style app for storage space</Text>
-      <Text>front-end built with react native</Text>
-      <Text>back-end built with python, stdlib & algolia</Text>
-      <Text>hardware built with dragonboard 410c</Text>
-      <Box direction="row">
-        <a href="https://devpost.com/software/depository-repository">
-          <Text margin={{right: "small"}}>devpost</Text>
-        </a>
-        <a href="https://github.com/pwnedpixel/repository-depository">
-          <Text>github</Text>
-        </a>
+    )
+  }
+}
+
+class Projects extends React.Component {
+
+  constructor(props){
+    super(props);
+    this.state = { year: "2019" };
+  }
+
+  render(){
+    return (
+      <Box width="large">
+        <Menu
+          label={this.state.year}
+          items={[
+            { label: '2019', onClick: () => { this.setState({ year: "2019" })} },
+            { label: '2018', onClick: () => { this.setState({ year: "2018" })} },
+            { label: '2017', onClick: () => { this.setState({ year: "2017" })} },
+            { label: '2016', onClick: () => { this.setState({ year: "2016" })} },
+            { label: '2015', onClick: () => { this.setState({ year: "2015" })} },
+          ]}
+          margin={{bottom: "medium"}}
+        />
+        {
+          this.state.year === "2019" &&
+          <Box margin={{bottom: "medium"}}>
+            <Text weight="bold">medication dedication</Text>
+            <Text weight="bold">feb 2019</Text>
+            <Text>iot pill monitoring solution</Text>
+            <Text>front-end built with flutter</Text>
+            <Text>back-end built with nodejs & azure sql database</Text>
+            <Text>hardware built with arduino & particle photon</Text>
+            <Box direction="row">
+              <a href="https://devpost.com/software/medication-dedication">
+                <Text margin={{right: "small"}}>devpost</Text>
+              </a>
+              <a href="https://github.com/iYung/med-ded-client-app">
+                <Text>github</Text>
+              </a>
+            </Box>
+          </Box>
+        }
+        {
+          this.state.year === "2018" &&
+          <Box>
+            <Box margin={{bottom: "medium"}}>
+              <Text weight="bold">depository repository</Text>
+              <Text weight="bold">nov 2018</Text>
+              <Text>airbnb style app for storage space</Text>
+              <Text>front-end built with react native</Text>
+              <Text>back-end built with python, stdlib & algolia</Text>
+              <Text>hardware built with dragonboard 410c</Text>
+              <Box direction="row">
+                <a href="https://devpost.com/software/depository-repository">
+                  <Text margin={{right: "small"}}>devpost</Text>
+                </a>
+                <a href="https://github.com/pwnedpixel/repository-depository">
+                  <Text>github</Text>
+                </a>
+              </Box>
+            </Box>
+            <Box margin={{bottom: "medium"}}>
+              <Text weight="bold">pawsitivity</Text>
+              <Text weight="bold">oct 2018</Text>
+              <Text>chrome extension which prevents negative comments</Text>
+              <Text>extension built with javascript</Text>
+              <Box direction="row">
+                <a href="https://devpost.com/software/bark-and-byte">
+                  <Text margin={{right: "small"}}>devpost</Text>
+                </a>
+                <a href="https://github.com/iYung/mhacks11">
+                  <Text>github</Text>
+                </a>
+              </Box>
+            </Box>
+            <Box margin={{bottom: "medium"}}>
+              <Text weight="bold">tap atm</Text>
+              <Text weight="bold">may 2018</Text>
+              <Text>payment experiment using nfc with atms</Text>
+              <Text>android apps made with kotlin</Text>
+              <Text>backend made with flask & python</Text>
+              <Text>hardware made with a raspberry pi & servos</Text>
+              <Box direction="row">
+                <a href="https://ruhacks2018.hackerearth.com/sprints/ru-hacks-2018/dashboard/a59a196/submission/">
+                  <Text margin={{right: "small"}}>hackerearth</Text>
+                </a>
+                <a href="https://github.com/pwnedpixel/TapATM">
+                  <Text>github</Text>
+                </a>
+              </Box>
+            </Box>
+          </Box>
+        }
       </Box>
-    </Box>
-    <Box margin={{bottom: "medium"}}>
-      <Text weight="bold">pawsitivity</Text>
-      <Text weight="bold">oct 2018</Text>
-      <Text>chrome extension which prevents negative comments</Text>
-      <Text>extension built with javascript</Text>
-      <Box direction="row">
-        <a href="https://devpost.com/software/bark-and-byte">
-          <Text margin={{right: "small"}}>devpost</Text>
-        </a>
-        <a href="https://github.com/iYung/mhacks11">
-          <Text>github</Text>
-        </a>
-      </Box>
-    </Box>
-  </Box>
-)
+    )
+  }
+}
 
 const Articles = (props) => (
   <Box width="large">
