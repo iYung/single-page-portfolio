@@ -16,8 +16,6 @@ const theme = {
     },
     font: {
       family: 'Roboto',
-      size: '12px',
-      height: '15px',
     },
   },
 };
@@ -49,7 +47,7 @@ const Images = (props) => (
         height={size === "small" ? "medium" :"large"}
         margin={{left: "large", right: "large"}}
       >
-        <Carousel fill>
+        <Carousel fill play={7000}>
           <Image
             fit="cover"
             alignSelf="center"
@@ -64,6 +62,21 @@ const Images = (props) => (
             fit="cover"
             alignSelf="center"
             src={require("./2.png")}
+          />
+          <Image
+            fit="cover"
+            alignSelf="center"
+            src={require("./4.png")}
+          />
+          <Image
+            fit="cover"
+            alignSelf="center"
+            src={require("./7.png")}
+          />
+          <Image
+            fit="cover"
+            alignSelf="center"
+            src={require("./6.png")}
           />
         </Carousel>
       </Box>
