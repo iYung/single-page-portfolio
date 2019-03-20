@@ -44,7 +44,7 @@ const Images = (props) => (
         overflow='hidden'
         align='center' 
         justify='center'
-        height={size === "small" ? "medium" :"large"}
+        height={size === "small" ? "medium" : "large" }
         margin={{left: "large", right: "large"}}
       >
         <Carousel fill play={7000}>
