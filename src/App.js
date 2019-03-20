@@ -8,7 +8,7 @@ const theme = {
       icon: "#000",
       brand: '#FFF',
       text: '#000',
-      control: '#B20000'
+      control: "#000"
     },
     focus: {
       border: {
@@ -21,6 +21,7 @@ const theme = {
   },
   carousel : { 
     icons : {
+      color: "#FFF",
       current: Caret,
     }
   }
@@ -88,13 +89,13 @@ const Images = (props) => (
 const Work = (props) => (
   <Box width="large">
     <Box margin={{bottom: "medium"}}>
-      <Box direction="row"><Text weight="bold" margin={{right: "xsmall"}}>developer co-op @ </Text> <Text color="control" weight="bold">td innovation lab</Text></Box>
+      <Text weight="bold" margin={{right: "xsmall"}}>developer co-op @ td innovation lab</Text>
       <Text weight="bold">may 2018 to aug 2018</Text>
       <Text>mobile app development for android & ios</Text>
       <Text>used kotlin, java, swift, & react native</Text>
     </Box>
     <Box margin={{bottom: "medium"}}>
-      <Box direction="row"><Text weight="bold" margin={{right: "xsmall"}}>it application intern @ </Text> <Text color="control" weight="bold">celestica</Text></Box>
+      <Text weight="bold" margin={{right: "xsmall"}}>it application intern @ celestica</Text>
       <Text weight="bold">may 2017 to apr 2018</Text>
       <Text>app development with python & javascript</Text>
       <Text>sql query creation</Text>
@@ -126,7 +127,7 @@ class Awards extends React.Component {
         {
           this.state.year === "2019" &&
           <Box margin={{bottom: "medium"}}>
-            <Box direction="row"><Text weight="bold" margin={{right: "xsmall"}}>best use of particle iot @  </Text> <Text color="control" weight="bold">makeuoft</Text></Box>
+            <Text weight="bold" margin={{right: "xsmall"}}>best use of particle iot @  makeuoft</Text>
             <Text>feb 2019</Text>
           </Box>
         }
@@ -134,11 +135,11 @@ class Awards extends React.Component {
           this.state.year === "2018" &&
           <Box>
             <Box margin={{bottom: "medium"}}>
-              <Box direction="row"><Text weight="bold" margin={{right: "xsmall"}}>best use of algolia @ </Text> <Text color="control" weight="bold">mhacks 11</Text></Box>
+              <Text weight="bold" margin={{right: "xsmall"}}>best use of algolia @ mhacks 11</Text>
               <Text>oct 2018</Text>
             </Box>
             <Box margin={{bottom: "medium"}}>
-              <Box direction="row"><Text weight="bold" margin={{right: "xsmall"}}>cibc client experience hack @ </Text> <Text color="control" weight="bold">ruhacks</Text></Box>
+              <Text weight="bold" margin={{right: "xsmall"}}>cibc client experience hack @ ruhacks</Text>
               <Text>may 2018</Text>
             </Box>
           </Box>
@@ -147,27 +148,27 @@ class Awards extends React.Component {
           this.state.year === "2017" &&
           <Box>
             <Box margin={{bottom: "medium"}}>
-              <Box direction="row"><Text weight="bold" margin={{right: "xsmall"}}>best green hack @ </Text> <Text color="control" weight="bold">echacks</Text></Box>
+              <Text weight="bold" margin={{right: "xsmall"}}>best green hack @ echacks</Text>
               <Text>nov 2017</Text>
             </Box>
             <Box margin={{bottom: "medium"}}>
-              <Box direction="row"><Text weight="bold" margin={{right: "xsmall"}}>2nd place @ </Text> <Text color="control" weight="bold">echacks</Text></Box>
+              <Text weight="bold" margin={{right: "xsmall"}}>2nd place @ echacks</Text>
               <Text>nov 2017</Text>
             </Box>
             <Box margin={{bottom: "medium"}}>
-              <Box direction="row"><Text weight="bold" margin={{right: "xsmall"}}>finalist @ </Text> <Text color="control" weight="bold">hack the north</Text></Box>
+              <Text weight="bold" margin={{right: "xsmall"}}>finalist @ hack the north</Text>
               <Text>sept 2017</Text>
             </Box>
             <Box margin={{bottom: "medium"}}>
-              <Box direction="row"><Text weight="bold" margin={{right: "xsmall"}}>dean's honor list @ </Text> <Text color="control" weight="bold">western university</Text></Box>
+              <Text weight="bold" margin={{right: "xsmall"}}>dean's honor list @ western university</Text>
               <Text>apr 2017</Text>
             </Box>
             <Box margin={{bottom: "medium"}}>
-              <Box direction="row"><Text weight="bold" margin={{right: "xsmall"}}>2nd place @ </Text> <Text color="control" weight="bold">qhacks</Text></Box>
+              <Text weight="bold" margin={{right: "xsmall"}}>2nd place @ qhacks</Text>
               <Text>feb 2017</Text>
             </Box>
             <Box margin={{bottom: "medium"}}>
-              <Box direction="row"><Text weight="bold" margin={{right: "xsmall"}}>best use of indico api @</Text> <Text color="control" weight="bold">qhacks</Text></Box>
+              <Text weight="bold" margin={{right: "xsmall"}}>best use of indico api @qhacks</Text>
               <Text>feb 2017</Text>
             </Box>
           </Box>
@@ -176,11 +177,11 @@ class Awards extends React.Component {
           this.state.year === "2016" &&
           <Box>
             <Box margin={{bottom: "medium"}}>
-              <Box direction="row"><Text weight="bold" margin={{right: "xsmall"}}>1st place @</Text> <Text color="control" weight="bold">hackwestern</Text></Box>
+              <Text weight="bold" margin={{right: "xsmall"}}>1st place @hackwestern</Text>
               <Text>oct 2016</Text>
             </Box>
             <Box margin={{bottom: "medium"}}>
-              <Box direction="row"><Text weight="bold" margin={{right: "xsmall"}}>3rd place @</Text> <Text color="control" weight="bold">wearhackskw</Text></Box>
+              <Text weight="bold" margin={{right: "xsmall"}}>3rd place @wearhackskw</Text>
               <Text>mar 2016</Text>
             </Box>
           </Box>
@@ -189,7 +190,7 @@ class Awards extends React.Component {
           this.state.year === "2015" &&
           <Box>
             <Box margin={{bottom: "medium"}}>
-              <Box direction="row"><Text weight="bold" margin={{right: "xsmall"}}>best hardware hack @</Text> <Text color="control" weight="bold">hackwestern</Text></Box>
+              <Text weight="bold" margin={{right: "xsmall"}}>best hardware hack @hackwestern</Text>
               <Text>nov 2015</Text>
             </Box>
           </Box>
@@ -231,10 +232,10 @@ class Projects extends React.Component {
             <Text>hardware built with arduino & particle photon</Text>
             <Box direction="row">
               <a href="https://devpost.com/software/medication-dedication">
-                <Text color="control" margin={{right: "small"}}>devpost</Text>
+                <Text  margin={{right: "small"}}>devpost</Text>
               </a>
               <a href="https://github.com/iYung/med-ded-client-app">
-                <Text color="control">github</Text>
+                <Text >github</Text>
               </a>
             </Box>
           </Box>
@@ -251,10 +252,10 @@ class Projects extends React.Component {
               <Text>hardware built with dragonboard 410c</Text>
               <Box direction="row">
                 <a href="https://devpost.com/software/depository-repository">
-                  <Text color="control" margin={{right: "small"}}>devpost</Text>
+                  <Text  margin={{right: "small"}}>devpost</Text>
                 </a>
                 <a href="https://github.com/pwnedpixel/repository-depository">
-                  <Text color="control">github</Text>
+                  <Text >github</Text>
                 </a>
               </Box>
             </Box>
@@ -265,10 +266,10 @@ class Projects extends React.Component {
               <Text>extension built with javascript</Text>
               <Box direction="row">
                 <a href="https://devpost.com/software/bark-and-byte">
-                  <Text color="control" margin={{right: "small"}}>devpost</Text>
+                  <Text  margin={{right: "small"}}>devpost</Text>
                 </a>
                 <a href="https://github.com/iYung/mhacks11">
-                  <Text color="control">github</Text>
+                  <Text >github</Text>
                 </a>
               </Box>
             </Box>
@@ -280,7 +281,7 @@ class Projects extends React.Component {
               <Text>back-end made with python & firebase</Text>
               <Box direction="row">
                 <a href="https://devpost.com/software/genome-meetup">
-                  <Text color="control" margin={{right: "small"}}>devpost</Text>
+                  <Text  margin={{right: "small"}}>devpost</Text>
                 </a>
               </Box>
             </Box>
@@ -292,10 +293,10 @@ class Projects extends React.Component {
               <Text>back-end made with nodejs & mongodb</Text>
               <Box direction="row">
                 <a href="https://devcircles2018.herokuapp.com/">
-                  <Text color="control" margin={{right: "small"}}>website</Text>
+                  <Text  margin={{right: "small"}}>website</Text>
                 </a>
                 <a href="https://github.com/iYung/fb-community-challenge-2018">
-                  <Text color="control">github</Text>
+                  <Text >github</Text>
                 </a>
               </Box>
             </Box>
@@ -308,10 +309,10 @@ class Projects extends React.Component {
               <Text>hardware made with a raspberry pi & servos</Text>
               <Box direction="row">
                 <a href="https://ruhacks2018.hackerearth.com/sprints/ru-hacks-2018/dashboard/a59a196/submission/">
-                  <Text color="control" margin={{right: "small"}}>hackerearth</Text>
+                  <Text  margin={{right: "small"}}>hackerearth</Text>
                 </a>
                 <a href="https://github.com/pwnedpixel/TapATM">
-                  <Text color="control">github</Text>
+                  <Text >github</Text>
                 </a>
               </Box>
             </Box>
@@ -323,7 +324,7 @@ class Projects extends React.Component {
               <Text>back-end made with AWS, nodejs & redis</Text>
               <Box direction="row">
                 <a href="https://github.com/iYung/positivityGame">
-                  <Text color="control">github</Text>
+                  <Text >github</Text>
                 </a>
               </Box>
             </Box>
@@ -335,7 +336,7 @@ class Projects extends React.Component {
               <Text>add-on made with coffeescript & jquery</Text>
               <Box direction="row">
                 <a href="https://github.com/iYung/mangaDexAllPagesExtension">
-                  <Text color="control">github</Text>
+                  <Text >github</Text>
                 </a>
               </Box>
             </Box>
@@ -352,7 +353,7 @@ class Projects extends React.Component {
               <Text>hardware built with a spark photon & motors</Text>
               <Box direction="row">
                 <a href="https://devpost.com/software/shelfie-njv01d">
-                  <Text color="control" margin={{right: "small"}}>devpost</Text>
+                  <Text  margin={{right: "small"}}>devpost</Text>
                 </a>
               </Box>
             </Box>
@@ -365,7 +366,7 @@ class Projects extends React.Component {
               <Text>deployed on heroku</Text>
               <Box direction="row">
                 <a href="https://github.com/iYung/portfolio1.5">
-                  <Text color="control" margin={{right: "small"}}>github</Text>
+                  <Text  margin={{right: "small"}}>github</Text>
                 </a>
               </Box>
             </Box>
@@ -378,10 +379,10 @@ class Projects extends React.Component {
               <Text>hardware made with a raspberry pi & solenoids</Text>
               <Box direction="row">
                 <a href="https://devpost.com/software/grow-with-the-flow">
-                  <Text color="control" margin={{right: "small"}}>devpost</Text>
+                  <Text  margin={{right: "small"}}>devpost</Text>
                 </a>
                 <a href="https://github.com/iYung/plantWatering">
-                  <Text color="control" margin={{right: "small"}}>github</Text>
+                  <Text  margin={{right: "small"}}>github</Text>
                 </a>
               </Box>
             </Box>
@@ -394,7 +395,7 @@ class Projects extends React.Component {
               <Text>phone app made with c#, unity & vuforia</Text>
               <Box direction="row">
                 <a href="https://devpost.com/software/gall-ar-y">
-                  <Text color="control" margin={{right: "small"}}>devpost</Text>
+                  <Text  margin={{right: "small"}}>devpost</Text>
                 </a>
               </Box>
             </Box>
@@ -407,7 +408,7 @@ class Projects extends React.Component {
               <Text>desktop app made with c# & windows forms</Text>
               <Box direction="row">
                 <a href="https://github.com/iYung/atlasReactorReplays">
-                  <Text color="control" margin={{right: "small"}}>github</Text>
+                  <Text  margin={{right: "small"}}>github</Text>
                 </a>
               </Box>
             </Box>
@@ -420,10 +421,10 @@ class Projects extends React.Component {
               <Text>hardware made with a raspberry pi, motors & python</Text>
               <Box direction="row">
                 <a href="https://devpost.com/software/green-waste-bin">
-                  <Text color="control" margin={{right: "small"}}>devpost</Text>
+                  <Text  margin={{right: "small"}}>devpost</Text>
                 </a>
                 <a href="https://github.com/pwnedpixel/GreenGarbage">
-                  <Text color="control" margin={{right: "small"}}>github</Text>
+                  <Text  margin={{right: "small"}}>github</Text>
                 </a>
               </Box>
             </Box>
@@ -436,10 +437,10 @@ class Projects extends React.Component {
               <Text>hardware made with a raspberry pi & python</Text>
               <Box direction="row">
                 <a href="https://devpost.com/software/theia-o02nk8">
-                  <Text color="control" margin={{right: "small"}}>devpost</Text>
+                  <Text  margin={{right: "small"}}>devpost</Text>
                 </a>
                 <a href="https://github.com/pwnedpixel/RecogToSpeech">
-                  <Text color="control" margin={{right: "small"}}>github</Text>
+                  <Text  margin={{right: "small"}}>github</Text>
                 </a>
               </Box>
             </Box>
@@ -455,10 +456,10 @@ class Projects extends React.Component {
               <Text>hardware built with a raspberry pi, python & solenoids</Text>
               <Box direction="row">
                 <a href="https://devpost.com/software/braille-printer">
-                  <Text color="control" margin={{right: "small"}}>devpost</Text>
+                  <Text  margin={{right: "small"}}>devpost</Text>
                 </a>
                 <a href="https://github.com/pwnedpixel/BraillePrinter">
-                  <Text color="control" margin={{right: "small"}}>github</Text>
+                  <Text  margin={{right: "small"}}>github</Text>
                 </a>
               </Box>
             </Box>
@@ -469,7 +470,7 @@ class Projects extends React.Component {
               <Text>phone app made with unity, c# & vuforia</Text>
               <Box direction="row">
                 <a href="https://devpost.com/software/ar-watch">
-                  <Text color="control" margin={{right: "small"}}>devpost</Text>
+                  <Text  margin={{right: "small"}}>devpost</Text>
                 </a>
               </Box>
             </Box>
@@ -480,7 +481,7 @@ class Projects extends React.Component {
               <Text>hardware made with a spark photon & leds</Text>
               <Box direction="row">
                 <a href="https://devpost.com/software/shake-and-quake-7we4zv">
-                  <Text color="control" margin={{right: "small"}}>devpost</Text>
+                  <Text  margin={{right: "small"}}>devpost</Text>
                 </a>
               </Box>
             </Box>
@@ -496,7 +497,7 @@ class Projects extends React.Component {
             <Text>hardware built with an arduino, oculus rift & exercise bike</Text>
             <Box direction="row">
               <a href="https://devpost.com/software/just-out-for-a-rift">
-                <Text color="control" margin={{right: "small"}}>devpost</Text>
+                <Text  margin={{right: "small"}}>devpost</Text>
               </a>
             </Box>
           </Box>
@@ -511,15 +512,15 @@ const Articles = (props) => (
   <Box width="large">
     <Box margin={{bottom: "medium"}}>
       <a href="https://medium.freecodecamp.org/a-beginners-guide-to-training-and-deploying-machine-learning-models-using-python-48a313502e5a">
-        <Text color="text" weight="bold">a beginner's guide to training and deploying machine learning models using python</Text>
+        <Text weight="bold">a beginner's guide to training and deploying machine learning models using python</Text>
       </a>
-      <Box direction="row"><Text margin={{right: "xsmall"}}>jun 2018 on </Text><Text color="control" weight="bold">freecodecamp</Text></Box>
+      <Text margin={{right: "xsmall"}}>jun 2018 on freecodecamp</Text>
     </Box>
     <Box margin={{bottom: "medium"}}>
       <a href="https://medium.com/td-lab/an-introductory-guide-to-android-jetpack-slices-9f49a001be3b">
-        <Text color="text" weight="bold">an introductory guide to android jetpack slices</Text>
+        <Text weight="bold">an introductory guide to android jetpack slices</Text>
       </a>
-      <Box direction="row"><Text margin={{right: "xsmall"}}>may 2018 on </Text><Text color="control" weight="bold">td lab</Text></Box>
+      <Text margin={{right: "xsmall"}}>may 2018 on td lab</Text>
     </Box>
   </Box>
 )
