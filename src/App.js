@@ -23,6 +23,8 @@ const theme = {
     icons : {
       color: "#FFF",
       current: Caret,
+      next: "div",
+      previous: "div"
     }
   }
 };
