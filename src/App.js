@@ -1,13 +1,9 @@
 import React, { Component } from 'react';
-import { Box, Button, Heading, Grommet, Accordion, AccordionPanel } from 'grommet';
+import { Box, Button, Grommet } from 'grommet';
 import { LinkedinOption, Github, DocumentText, StatusInfoSmall as Caret } from 'grommet-icons';
 
-import Images from './components/Images';
 import AppBar from './components/AppBar';
-import Work from './components/Work';
-import Awards from './components/Awards';
-import Projects from './components/Projects';
-import Articles from './components/Articles';
+import Content from './components/Content';
 
 const theme = {
   global: {
@@ -40,8 +36,12 @@ class App extends Component {
   render() {
     return (
       <Grommet theme={theme}>
+
+        <Box align="center" margin={{left: "large", right: "large"}}>
+          <Content />
+        </Box>
+        <Box align="center">
         <AppBar>
-          <Heading level='3' color='text' margin='none'>ivan yung</Heading>
           <Box direction="row">
             <a href="https://github.com/iyung">
               <Button icon={<Github color="text"/>} onClick={() => {}} />
@@ -54,33 +54,6 @@ class App extends Component {
             </a>
           </Box>
         </AppBar>
-        <Images />
-        <Box
-          margin={{left: "large", right: "large", top: "large", bottom: "medium"}}
-          align="center"
-        >
-          <Accordion>
-            <AccordionPanel label="work">
-              <Box pad="medium" background="brand">
-                <Work />
-              </Box>
-            </AccordionPanel>
-            <AccordionPanel label="projects">
-              <Box pad="medium" background="brand">
-                <Projects />
-              </Box>
-            </AccordionPanel>
-            <AccordionPanel label="articles">
-              <Box pad="medium" background="brand">
-                <Articles />
-              </Box>
-            </AccordionPanel>
-            <AccordionPanel label="awards">
-              <Box pad="medium" background="brand">
-                <Awards />
-              </Box>
-            </AccordionPanel>
-          </Accordion>
         </Box>
       </Grommet>
     );
