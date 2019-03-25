@@ -24,20 +24,33 @@ class Projects extends React.Component {
           />
           {
             this.state.year === "2019" &&
-            <Box margin={{bottom: "medium"}}>
-              <Text weight="bold">medication dedication</Text>
-              <Text weight="bold">feb 2019</Text>
-              <Text>iot pill monitoring solution</Text>
-              <Text>front-end built with flutter</Text>
-              <Text>back-end built with nodejs & azure sql database</Text>
-              <Text>hardware built with arduino & particle photon</Text>
-              <Box direction="row">
-                <a href="https://devpost.com/software/medication-dedication">
-                  <Text  margin={{right: "small"}}>devpost</Text>
-                </a>
-                <a href="https://github.com/iYung/med-ded-client-app">
-                  <Text >github</Text>
-                </a>
+            <Box>
+              <Box margin={{bottom: "medium"}}>
+                <Text weight="bold">this webpage</Text>
+                <Text weight="bold">mar 2019</Text>
+                <Text>front-end built with react & nodejs</Text>
+                <Text>deployed on github pages</Text>
+                <Box direction="row">
+                  <a href="https://github.com/iYung/single-page-portfolio">
+                    <Text >github</Text>
+                  </a>
+                </Box>
+              </Box>
+              <Box margin={{bottom: "medium"}}>
+                <Text weight="bold">medication dedication</Text>
+                <Text weight="bold">feb 2019</Text>
+                <Text>iot pill monitoring solution</Text>
+                <Text>front-end built with flutter</Text>
+                <Text>back-end built with nodejs & azure sql database</Text>
+                <Text>hardware built with arduino & particle photon</Text>
+                <Box direction="row">
+                  <a href="https://devpost.com/software/medication-dedication">
+                    <Text  margin={{right: "small"}}>devpost</Text>
+                  </a>
+                  <a href="https://github.com/iYung/med-ded-client-app">
+                    <Text >github</Text>
+                  </a>
+                </Box>
               </Box>
             </Box>
           }

@@ -25,7 +25,7 @@ class Awards extends React.Component {
           {
             this.state.year === "2019" &&
             <Box margin={{bottom: "medium"}}>
-              <Text weight="bold" margin={{right: "xsmall"}}>best use of particle iot @  makeuoft</Text>
+              <Text weight="bold" margin={{right: "xsmall"}}>best use of particle iot @ makeuoft</Text>
               <Text>feb 2019</Text>
             </Box>
           }
