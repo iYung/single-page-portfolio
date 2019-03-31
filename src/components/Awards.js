@@ -66,7 +66,7 @@ class Awards extends React.Component {
                 <Text>feb 2017</Text>
               </Box>
               <Box margin={{bottom: "medium"}}>
-                <Text weight="bold" margin={{right: "xsmall"}}>best use of indico api @qhacks</Text>
+                <Text weight="bold" margin={{right: "xsmall"}}>best use of indico api @ qhacks</Text>
                 <Text>feb 2017</Text>
               </Box>
             </Box>
@@ -75,11 +75,11 @@ class Awards extends React.Component {
             this.state.year === "2016" &&
             <Box>
               <Box margin={{bottom: "medium"}}>
-                <Text weight="bold" margin={{right: "xsmall"}}>1st place @hackwestern</Text>
+                <Text weight="bold" margin={{right: "xsmall"}}>1st place @ hackwestern</Text>
                 <Text>oct 2016</Text>
               </Box>
               <Box margin={{bottom: "medium"}}>
-                <Text weight="bold" margin={{right: "xsmall"}}>3rd place @wearhackskw</Text>
+                <Text weight="bold" margin={{right: "xsmall"}}>3rd place @ wearhackskw</Text>
                 <Text>mar 2016</Text>
               </Box>
             </Box>
@@ -88,7 +88,7 @@ class Awards extends React.Component {
             this.state.year === "2015" &&
             <Box>
               <Box margin={{bottom: "medium"}}>
-                <Text weight="bold" margin={{right: "xsmall"}}>best hardware hack @hackwestern</Text>
+                <Text weight="bold" margin={{right: "xsmall"}}>best hardware hack @ hackwestern</Text>
                 <Text>nov 2015</Text>
               </Box>
             </Box>
