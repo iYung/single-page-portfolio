@@ -26,6 +26,13 @@ class Projects extends React.Component {
             this.state.year === "2019" &&
             <Box>
               <Box margin={{bottom: "medium"}}>
+                <Text weight="bold">open source contributions</Text>
+                <Text weight="bold">across 2019</Text>
+                <Text>added new features for mozilla projects</Text>
+                <Text>using python, javascript & react</Text>
+                <Text>currently at three contributions</Text>
+              </Box>
+              <Box margin={{bottom: "medium"}}>
                 <Text weight="bold">this webpage</Text>
                 <Text weight="bold">mar 2019</Text>
                 <Text>front-end built with react & nodejs</Text>
