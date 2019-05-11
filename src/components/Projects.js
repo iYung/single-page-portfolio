@@ -33,6 +33,19 @@ class Projects extends React.Component {
                 <Text>currently at three contributions</Text>
               </Box>
               <Box margin={{bottom: "medium"}}>
+                <Text weight="bold">mechatronic rehab brace</Text>
+                <Text weight="bold">apr 2019</Text>
+                <Text>my final year engineering capstone project</Text>
+                <Text>brace for upper limb rehab</Text>
+                <Text>using eeg & emg signals to control a brace</Text>
+                <Text>made with python and c++</Text>
+                <Box direction="row">
+                  <a href="https://github.com/iYung/OpenBCI_Python">
+                    <Text >github</Text>
+                  </a>
+                </Box>
+              </Box>
+              <Box margin={{bottom: "medium"}}>
                 <Text weight="bold">this webpage</Text>
                 <Text weight="bold">mar 2019</Text>
                 <Text>front-end built with react & nodejs</Text>
