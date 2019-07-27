@@ -5,8 +5,8 @@ const Work = (props) => (
     <Box width="large">
       <Box margin={{bottom: "medium"}}>
         <Text weight="bold" margin={{right: "xsmall"}}>software engineer @ square</Text>
-        <Text weight="bold">starting july 2019</Text>
-        <Text>working on cash app</Text>
+        <Text weight="bold">july 2019 to present</Text>
+        <Text>working on the boost team for cash app</Text>
       </Box>
       <Box margin={{bottom: "medium"}}>
         <Text weight="bold" margin={{right: "xsmall"}}>developer co-op @ td innovation lab</Text>

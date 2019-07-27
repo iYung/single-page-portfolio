@@ -30,7 +30,7 @@ class Projects extends React.Component {
                 <Text weight="bold">across 2019</Text>
                 <Text>added new features for mozilla projects</Text>
                 <Text>using python, javascript & react</Text>
-                <Text>currently at three contributions</Text>
+                <Text>currently at four contributions</Text>
               </Box>
               <Box margin={{bottom: "medium"}}>
                 <Text weight="bold">mechatronic rehab brace</Text>
